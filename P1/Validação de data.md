@@ -1,8 +1,8 @@
 
 ```mermaid
 flowchart TD
-    A([Início]) --> B[Leia dia, mes e ano]
-    B --> C{Mês valido 1-12}
+    A([Início]) --> B[Leia dia, mês e ano]
+    B --> C{Mês valido (1-12)}
 
     C -- Não --> Z[Data inválida]
     Z --> F([Fim])
