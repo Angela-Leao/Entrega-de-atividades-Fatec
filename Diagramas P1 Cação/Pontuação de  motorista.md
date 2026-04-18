@@ -4,7 +4,7 @@
 flowchart TD
     A([Início]) --> B[Leia velocidade permitida]
     B-->C[Leia velocidade do veículo]    
-    
+    C-->D[Cálculo de excesso = vel_veiculo - vel_permitida]
     D-->E{Excesso <= 0}
     E-->Sim -->F[Sem infração= 0 pontos]
     E-->Não -->G[Cáculo de percentual = (excesso / vel_permitida) * 100]
