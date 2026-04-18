@@ -1,25 +1,25 @@
 
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Leia dia, mes e ano]
-    B --> C{Mes valido 1-12}
+    A([Início]) --> B[Leia dia, mes e ano]
+    B --> C{Mês valido 1-12}
 
-    C -- Nao --> Z[Data invalida]
+    C -- Não --> Z[Data inválida]
     Z --> F([Fim])
 
-    C -- Sim --> D{Mes igual a 2}
+    C -- Sim --> D{fevereiro}
 
     D -- Sim --> E{Ano bissexto}
     E -- Sim --> G{Dia entre 1 e 29}
     E -- Nao --> H{Dia entre 1 e 28}
 
-    G -- Sim --> V[Data valida]
+    G -- Sim --> V[Data válida]
     G -- Nao --> Z
 
     H -- Sim --> V
     H -- Nao --> Z
 
-    D -- Nao --> I{Mes 4 6 9 11}
+    D -- Nao --> I{Mês 4 6 9 11}
     I -- Sim --> J{Dia entre 1 e 30}
     I -- Nao --> K{Dia entre 1 e 31}
 
