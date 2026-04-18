@@ -1,4 +1,5 @@
 # Pontuação de motorista
+
 ```mermaid
 flowchart TD
     A([Inicio]) --> B[Leia velocidade permitida]
