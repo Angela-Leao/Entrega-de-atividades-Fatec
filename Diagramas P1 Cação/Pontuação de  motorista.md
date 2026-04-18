@@ -16,8 +16,8 @@ flowchart TD
     J -- Sim --> K[Infração Grave - 5 pontos]
     J -- Não --> L[Infração Gravíssima - 7 pontos]
 
-    F --> M[Resultado]
-    I --> M
+    F --> k[Sem infração]
+    I --> M[Com Infração]
     K --> M
     L --> M
 
